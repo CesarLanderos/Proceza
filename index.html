@@ -1,0 +1,52 @@
+<!doctype html>
+<html id="ng-app" ng-app="miApp">
+    <head>
+        <title>Prozesa</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--[if IE 8]>  
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="js/json.js"></script>
+        <![endif]-->
+        <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+        <link type="text/css" href="css/prozesa.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        
+        <div id="navbar" class="container navbar navbar-fixed-top">
+            <ul id="nav-row" class="nav-pills offset8">
+                <li class=""><a href="/#/"><b>EMPRESA</b></a></li>
+                <li class="dropdown">
+                    
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><b>PRODUCTOS</b></a>
+                    <ul class="dropdown-menu" id="menu1">
+                        <li><a href="/#/granel">Granel</a></li>
+                        <li><a href="/#/empacados">Empacados</a></li>
+                    </ul>
+                    
+                </li>
+                <li class="span"><b>RECETAS</b></li>
+                <li class="span"><b>CONTACTO</b></li>
+            </ul>
+        </div>
+        
+        <div id="container" class="container" ng-controller="contenedor">
+            <ng-view></ng-view>
+        </div>
+        
+        <div id="footer" class="navbar navbar-fixed-bottom">
+            <div id="prodImg">
+                <img src="img/productos.png" />
+                <span id="labGranel">AGRANEL - BULTOS</span>
+                <span id="labEmp">EMPACADOS</span>
+            </div>
+        </div>
+        
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+        
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/prozesa.js"></script>
+    </body>
+</html>
