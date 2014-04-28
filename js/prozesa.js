@@ -33,24 +33,28 @@ miApp.config(function ($routeProvider) {
             templateUrl: "bienvenido.html",
             controller: "bienvenido"
         })
-        .when("/granel", {
+        .when("Procesa/", {
+            templateUrl: "bienvenido.html",
+            controller: "bienvenido"
+        })
+        .when("Procesa/granel", {
             templateUrl: "prodGranel.html",
             controller: "granel"
         })
-        .when("/empacados", {
+        .when("Procesa/empacados", {
             templateUrl: "prodEmp.html",
             controller: "empacados"
         })
-        .when("/granel/:producto", {
+        .when("Procesa/granel/:producto", {
             templateUrl: "granel.html",
             controller: "granel"
         })
-        .when("/empacados/:producto", {
+        .when("Procesa/empacados/:producto", {
             templateUrl: "emp.html",
             controller: "empacados"
         })
         .otherwise({
-            redirectTo: "/"
+            redirectTo: "Procesa/"
         });
 });
 
