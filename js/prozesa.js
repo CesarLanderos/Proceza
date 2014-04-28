@@ -92,19 +92,19 @@ miApp.controller("contenedor", function ($rootScope, $location) {
     
     $rootScope.$on("$routeChangeStart", function (event, current, previous, rejection) {
 
-        if ($location.path() === "/granel" || $location.path() === ("/granel/" + current.params.producto)) {
+        if ($location.path() === "Procesa/granel" || $location.path() === ("Procesa/granel/" + current.params.producto)) {
             $("#labGranel").css("display", "block");
             $("#labEmp").css("display", "none");
         }
-        if ($location.path() === "/empacados" || $location.path() === ("/empacados/" + current.params.producto)) {
+        if ($location.path() === "Procesa/empacados" || $location.path() === ("Procesa/empacados/" + current.params.producto)) {
             $("#labEmp").css("display", "block");
             $("#labGranel").css("display", "none");
         }
-        if ($location.path() === "/") {
+        if ($location.path() === "Procesa/") {
             $("#prodImg").css("display", "none");
         }
             
-        if ($("#footer").css("bottom") === "-147px" && ($location.path() === "/granel" || $location.path() === "/empacados" || $location.path() === ("/granel/" + current.params.producto) || $location.path() === ("/empacados/" + current.params.producto))) {
+        if ($("#footer").css("bottom") === "-147px" && ($location.path() === "Procesa/granel" || $location.path() === "Procesa/empacados" || $location.path() === ("Procesa/granel/" + current.params.producto) || $location.path() === ("Procesa/empacados/" + current.params.producto))) {
             $("#footer").fadeOut(function () {
                 $(this).css({ "bottom" : "auto", "top" : " 50px"});
                 $("#prodImg").fadeIn();
@@ -119,7 +119,7 @@ miApp.controller("contenedor", function ($rootScope, $location) {
     $rootScope.$on("$routeChangeSuccess", function (event, current, previous, rejection) {
         $("#footer").fadeIn();
         
-        if ($location.path() === "/empacados") {
+        if ($location.path() === "Procesa/empacados") {
             
         }
     });
