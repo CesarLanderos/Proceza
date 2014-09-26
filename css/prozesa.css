@@ -16,14 +16,14 @@ body{
     background-image:url('../img/navbar.png');
     background-repeat:no-repeat;
     background-position:center;
-    width:1280px;
+    width:1480px;
     height: 201px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     z-index: 100;
     
     left: 50%;
-    margin-left: -640px;
+    margin-left: -740px;
 }
     #nav-row{
         margin-top:30px;

@@ -12,8 +12,6 @@ var miApp = angular.module('miApp', [])
     }
     });
 
-//servicio :3
-
 miApp.factory('jsonRecibido', function ($http) {
     
     var obtenido = {};
@@ -24,8 +22,6 @@ miApp.factory('jsonRecibido', function ($http) {
     
     return obtenido;
 });
-
-//routing :3
 
 miApp.config(function ($routeProvider) {
     $routeProvider
@@ -53,8 +49,6 @@ miApp.config(function ($routeProvider) {
             redirectTo: "/"
         });
 });
-
-//controles :3
 
 miApp.controller("bienvenido", function ($scope) {
   
