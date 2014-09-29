@@ -96,7 +96,7 @@ miApp.controller("contenedor", function ($rootScope, $location) {
             
         if ($("#footer").css("bottom") === "-147px" && ($location.path() === "/granel" || $location.path() === "/empacados" || $location.path() === ("/granel/" + current.params.producto) || $location.path() === ("/empacados/" + current.params.producto))) {
             $("#footer").fadeOut(function () {
-                $(this).css({ "bottom" : "auto", "top" : " 50px"});
+                $(this).css({ "bottom" : "auto", "top" : " 10px"});
                 $("#prodImg").fadeIn();
             });
         }
