@@ -2,50 +2,32 @@
 <html id="ng-app" ng-app="miApp">
     <head>
         <title>Prozesa</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--[if IE 8]>  
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-            <script src="js/json.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap -->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
-        <link type="text/css" href="css/prozesa.css" rel="stylesheet">
         
     </head>
     <body>
         
-        <div id="navbar" class="container navbar navbar-fixed-top">
-            <ul id="nav-row" class="nav-pills offset8">
-                <li class=""><a href="/#/"><b>EMPRESA</b></a></li>
-                <li class="dropdown">
-                    
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><b>PRODUCTOS</b></a>
-                    <ul class="dropdown-menu" id="menu1">
-                        <li><a href="/#/granel">Granel</a></li>
-                        <li><a href="/#/empacados">Empacados</a></li>
-                    </ul>
-                    
-                </li>
-                <li class="span"><b>RECETAS</b></li>
-                <li class="span"><b>CONTACTO</b></li>
-            </ul>
-        </div>
+        <ui-view></ui-view>
         
-        <div id="container" class="container" ng-controller="contenedor">
-            <ng-view></ng-view>
-        </div>
-        
-        <div id="footer" class="navbar navbar-fixed-bottom">
-            <div id="prodImg">
-                <img src="img/productos.png" />
-                <span id="labGranel">AGRANEL - BULTOS</span>
-                <span id="labEmp">EMPACADOS</span>
-            </div>
-        </div>
-        
-        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
-        
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/prozesa.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/directives.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>

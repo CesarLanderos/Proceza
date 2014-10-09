@@ -1,0 +1,30 @@
+{
+  "name": "Prozesa",
+  "version": "2.0.0",
+  "homepage": "https://github.com/CesarLanderos/Proceza",
+  "authors": [
+    "Cesar Landeros <chichozell@gmail.com>"
+  ],
+  "description": "Landing para comercializadora de granos",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "proceza"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.26",
+    "angular-bootstrap": "~0.11.2",
+    "bootstrap": "~3.2.0",
+    "angular-ui-router": "~0.2.11"
+  }
+}
