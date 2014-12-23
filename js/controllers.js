@@ -1,23 +1,25 @@
 angular.module('prozesa.controllers', [])
-	.controller('main', function ($scope) {
+	.controller('main', function($scope) {
 
-		$scope.navHeadSelected = 0;
+	'use strict';
+
+        $scope.navHeadSelected = 0;
 
 	})
-	.controller('granel', function ($scope, $stateParams, jsonRecibido) {
+	.controller('granel', function($scope, $stateParams, jsonRecibido) {
 
 		'use strict';
 
-	    $scope.datos = jsonRecibido;
-	    $scope.direccion = {
-	        nombre: $stateParams.producto
-	    };
-	    $scope.$on('ngRepeatFinished', function(){
-	        var viewPortHeight = $(window).height();
-	            $('#proGranel').height(viewPortHeight - 116);
-	    });
+		$scope.datos = jsonRecibido;
+		$scope.direccion = {
+			nombre: $stateParams.producto
+		};
+		$scope.$on('ngRepeatFinished', function() {
+			var viewPortHeight = $(window).height();
+			$('#proGranel').height(viewPortHeight - 116);
+		});
 	})
-	.controller('empacados', function ($scope, $stateParams, jsonRecibido) {
+	.controller('empacados', function($scope, $stateParams, jsonRecibido) {
 
 		'use strict';
 
@@ -75,7 +77,7 @@ angular.module('prozesa.controllers', [])
 				$location.path() === '/') {
 
 	            $('#footer').fadeOut(function () {
-	                $(this).css({ 'bottom' : ' -147px', 'top' : 'auto'});
+	                $(this).css({ 'bottom': ' -147px', 'top': 'auto'});
 	            });
 
 	        }
@@ -85,9 +87,6 @@ angular.module('prozesa.controllers', [])
 
 	        $('#footer').fadeIn();
 
-	        if ($location.path() === '/empacados') {
-
-	        }
 	    });
 
 	});
