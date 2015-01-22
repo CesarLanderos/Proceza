@@ -27,12 +27,6 @@ angular.module('prozesa.controllers', [])
 	    $scope.direccion = {
 	        nombre: $stateParams.producto
 	    };
-	    $scope.$on('ngRepeatFinished', function(){
-	        var viewPortHeight = $(window).height();
-	            console.log(viewPortHeight - 335);
-	            $('#imgContainer').height('auto');
-	            $('#imgContainer').height(viewPortHeight - 335);
-	    });
 	})
 	.controller('contenedor', function ($rootScope, $location) {
 

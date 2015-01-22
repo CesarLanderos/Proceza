@@ -100,6 +100,8 @@ header.container{
 }
 
 #empSelect {
+    background: white url(../img/fondo_empacados.jpg) no-repeat top;
+    padding-top: 275px;
     height: 100%;
     width: 1020px;
     position: relative;
@@ -166,10 +168,34 @@ header.container{
 }
 
 #imgContainer {
-    top: 335px;
-    width: 1036px;
-    position: absolute;
-    overflow: auto;
+    position: relative;
+    overflow: hidden;
+    width: 900px;
+}
+
+#imgContainer > a {
+    margin-right: 33px;
+}
+
+#imgContainer > a:nth-child(3) {
+    margin-right: 0px;
+}
+
+#imgContainer > a:nth-child(6) {
+    margin-right: 0px;
+}
+
+#imgContainer > a:nth-child(9) {
+    margin-right: 0px;
+}
+
+#imgContainer > a:nth-child(12) {
+    margin-right: 0px;
+}
+
+#imgContainer > a img {
+    width: 280px;
+    margin-bottom: 83px;
 }
 
 #proEmp {
