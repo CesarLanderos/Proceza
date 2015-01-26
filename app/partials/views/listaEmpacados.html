@@ -1,0 +1,13 @@
+
+<section class="lista-empacados row">
+  <header class="col-xs-12"><img src="img/label-empacados.png"/>
+    <ul>
+      <li ng-class="{active: vm.filter == 'arroz'}"><a href="javascript:void(0)" ng-click="vm.filter = 'arroz'"><img src="img/navEmpacados_01.png" alt="" class="center-block"/></a></li>
+      <li ng-class="{active: vm.filter == 'frijol'}"><a href="javascript:void(0)" ng-click="vm.filter = 'frijol'"><img src="img/navEmpacados_02.png" alt="" class="center-block"/></a></li>
+      <li ng-class="{active: !vm.filter || vm.filter == ''}"><a href="javascript:void(0)" ng-click="vm.filter = ''"><img src="img/navEmpacados_03.png" alt="" class="center-block"/></a></li>
+    </ul>
+  </header>
+  <section class="lista col-xs-12">
+    <article ng-repeat="producto in vm.lista | filter:vm.filter" class="producto"><a ui-sref="empacados.producto({nombre: producto})"><img ng-src="{{'img/prod' + producto + '.jpg'}}"/></a></article>
+  </section>
+</section>

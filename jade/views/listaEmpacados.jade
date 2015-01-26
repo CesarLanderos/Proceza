@@ -1,0 +1,20 @@
+section.lista-empacados.row
+    header.col-xs-12
+        img(src='img/label-empacados.png')
+        ul
+            li(ng-class="{active: vm.filter == 'arroz'}")
+                a(href="javascript:void(0)" ng-click="vm.filter = 'arroz'")
+                    img.center-block(src="img/navEmpacados_01.png", alt="")
+            li(ng-class="{active: vm.filter == 'frijol'}")
+                a(href="javascript:void(0)" ng-click="vm.filter = 'frijol'")
+                    img.center-block(src="img/navEmpacados_02.png", alt="")
+            li(ng-class="{active: !vm.filter || vm.filter == ''}")
+                a(href="javascript:void(0)" ng-click="vm.filter = ''")
+                    img.center-block(src="img/navEmpacados_03.png", alt="")
+
+    section.lista.col-xs-12
+        article.producto(
+            ng-repeat='producto in vm.lista | filter:vm.filter'
+        )
+            a(ui-sref='empacados.producto({nombre: producto})')
+                img(ng-src="{{'img/prod' + producto + '.jpg'}}")

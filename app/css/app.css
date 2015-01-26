@@ -1,0 +1,97 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(../img/fondo.jpg);
+  background-repeat: repeat-y;
+  background-position: 50% 92%;
+  background-attachment: fixed; }
+
+body > header {
+  background-image: url(../img/menuBack.png);
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-size: 100% 177px;
+  width: 100%;
+  min-height: 177px;
+  top: 0;
+  position: fixed;
+  z-index: 1000; }
+  body > header nav.navbar {
+    background: none;
+    border: none;
+    color: black; }
+    body > header nav.navbar.navbar-default .navbar-nav > li > a {
+      color: black; }
+  body > header .navbar-header img {
+    margin-top: 25px;
+    margin-left: 15px; }
+  body > header .collapse.in, body > header .collapsing, body > header .navbar-header-selected {
+    border: none;
+    background: white; }
+  body > header b {
+    font-weight: normal; }
+
+main {
+  margin-top: 65px;
+  min-height: 800px;
+  background: white; }
+
+.home img.fondo {
+  width: 100%;
+  height: auto;
+  margin-top: -15px; }
+
+.lista-empacados header {
+  height: 140px;
+  background: #E20613;
+  border-bottom: 5px #009245 solid; }
+  .lista-empacados header > img {
+    right: 85px;
+    top: 45px;
+    position: absolute; }
+  .lista-empacados header ul {
+    list-style: none;
+    position: absolute;
+    bottom: -40px;
+    padding-left: 0; }
+    .lista-empacados header ul li {
+      float: left;
+      position: relative;
+      width: 120px;
+      height: 60px; }
+      .lista-empacados header ul li.active {
+        border-bottom: 5px red solid; }
+      .lista-empacados header ul li img {
+        bottom: 5px;
+        position: absolute; }
+.lista-empacados .lista {
+  margin-top: 100px; }
+  .lista-empacados .lista .producto {
+    display: inline-block;
+    float: left;
+    width: 32%; }
+    .lista-empacados .lista .producto:nth-child(n) {
+      margin-bottom: 2%;
+      margin-right: 2%; }
+    .lista-empacados .lista .producto:nth-child(3n) {
+      margin-right: 0;
+      margin-bottom: 0; }
+    @media (max-width: 992px) {
+      .lista-empacados .lista .producto {
+        width: 49%; }
+        .lista-empacados .lista .producto:nth-child(n) {
+          margin-bottom: 2%;
+          margin-right: 2%; }
+        .lista-empacados .lista .producto:nth-child(2n) {
+          margin-right: 0;
+          margin-bottom: 0; } }
+    @media (max-width: 360px) {
+      .lista-empacados .lista .producto {
+        width: 100%; }
+        .lista-empacados .lista .producto:nth-child(n) {
+          margin-bottom: 2%;
+          margin-right: 2%; }
+        .lista-empacados .lista .producto:nth-child(1n) {
+          margin-right: 0;
+          margin-bottom: 0; } }
+    .lista-empacados .lista .producto img {
+      width: 100%; }

@@ -1,0 +1,64 @@
+.lista-empacados{
+
+    header{
+
+        height: 140px;
+        background: #E20613;
+        border-bottom: 5px #009245 solid;
+
+        & > img{
+            right: 85px;
+            top: 45px;
+            position: absolute;
+        }
+
+        ul{
+            list-style: none;
+            position: absolute;
+            bottom: -40px;
+            padding-left: 0;
+
+            li{
+                float: left;
+                position: relative;
+                width: 120px;
+                height: 60px;
+
+                &.active{
+                    border-bottom: 5px red solid;
+                }
+
+                img{
+                    bottom: 5px;
+                    position: absolute;
+                }
+            }
+        }
+
+    }
+
+    .lista{
+        margin-top: 100px;
+
+        .producto{
+            display: inline-block;
+            float: left;
+            @include rowMachine(3, 2%);
+
+            @media (max-width: 992px) {
+                @include rowMachine(2, 2%);
+            }
+
+            @media (max-width: 360px) {
+                @include rowMachine(1, 2%);
+            }
+
+            img{
+                width: 100%;
+            }
+
+        }
+
+    }
+
+}
