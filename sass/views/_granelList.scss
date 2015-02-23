@@ -1,0 +1,50 @@
+.granel-list{
+    .list{
+        margin-top: 140px;
+        background: url('../img/granel-back.jpg') no-repeat right;
+        height: 595px;
+    }
+
+    footer{
+        position: fixed;
+        bottom: 20px;
+        text-align: center;
+
+        ul{
+            //width: 100%;
+            background-color: rgba(7,153,72,.9);
+            padding: 20px 70px 20px 70px;
+            list-style: none;
+            text-align: center;
+
+            li{
+                margin-right: 6px;
+                display: inline-block;
+
+                &:before{
+                    content: ' ';
+                    width: 13px;
+                    height: 13px;
+                    background: #F7931E;
+                    border-radius: 50%;
+                    border: 1px white solid;
+                    float: left;
+                    margin-top: 3px;
+                    margin-right: 6px;
+                }
+
+                a{
+                    text-transform: uppercase;
+                    float: left;
+                    display: inline-block;
+                }
+
+                a, a:hover, a:active, a:focus{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}

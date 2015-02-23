@@ -1,0 +1,10 @@
+
+<section class="granel-list row">
+  <header class="col-xs-12 top"><img src="img/label-granel.png"/></header>
+  <section class="list"></section>
+  <footer class="container">
+    <ul>
+      <li ng-repeat="option in vm.options"><a ui-sref="granel.producto({nombre:option})">{{vm.getListNames(option)}}</a></li>
+    </ul>
+  </footer>
+</section>

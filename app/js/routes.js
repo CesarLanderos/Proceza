@@ -22,7 +22,7 @@ function router($stateProvider, $urlRouterProvider){
         .state('empacados', {
             url: '/empacados',
             abstract: true,
-            template: '<ui-view>'
+            template: '<ui-view autoscroll="true">'
         })
 
         .state('empacados.lista', {
@@ -33,7 +33,28 @@ function router($stateProvider, $urlRouterProvider){
         })
         .state('empacados.producto', {
             url: '/:nombre',
-            templateUrl: 'partials/views/singleEmpacados.html'
+            templateUrl: 'partials/views/singleEmpacados.html',
+            controller: 'EmpacadosSingleController',
+            controllerAs: 'vm'
+        })
+
+        .state('granel', {
+            url: '/granel',
+            abstract: true,
+            template: '<ui-view autoscroll="true">'
+        })
+
+        .state('granel.lista', {
+            url: '/',
+            templateUrl: 'partials/views/listaGranel.html',
+            controller: 'GranelListaController',
+            controllerAs: 'vm'
+        })
+        .state('granel.producto', {
+            url: '/:nombre',
+            templateUrl: 'partials/views/singleGranel.html',
+            controller: 'GranelSingleController',
+            controllerAs: 'vm'
         });
 
 }

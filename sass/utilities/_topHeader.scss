@@ -1,0 +1,13 @@
+section > header.top{
+
+    height: 140px;
+    background: #E20613;
+    border-bottom: 5px #009245 solid;
+
+    & > img{
+        right: 85px;
+        top: 45px;
+        position: absolute;
+    }
+
+}

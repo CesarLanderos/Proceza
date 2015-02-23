@@ -1,40 +1,26 @@
 .lista-empacados{
 
-    header{
+    header ul{
+        list-style: none;
+        position: absolute;
+        bottom: -40px;
+        padding-left: 0;
 
-        height: 140px;
-        background: #E20613;
-        border-bottom: 5px #009245 solid;
+        li{
+            float: left;
+            position: relative;
+            width: 120px;
+            height: 60px;
 
-        & > img{
-            right: 85px;
-            top: 45px;
-            position: absolute;
-        }
+            &.active{
+                border-bottom: 5px red solid;
+            }
 
-        ul{
-            list-style: none;
-            position: absolute;
-            bottom: -40px;
-            padding-left: 0;
-
-            li{
-                float: left;
-                position: relative;
-                width: 120px;
-                height: 60px;
-
-                &.active{
-                    border-bottom: 5px red solid;
-                }
-
-                img{
-                    bottom: 5px;
-                    position: absolute;
-                }
+            img{
+                bottom: 5px;
+                position: absolute;
             }
         }
-
     }
 
     .lista{

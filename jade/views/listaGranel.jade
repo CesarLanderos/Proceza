@@ -1,0 +1,12 @@
+section.granel-list.row
+    header.col-xs-12.top
+        img(src='img/label-granel.png')
+    section.list
+    footer.container
+        ul
+            li(
+                ng-repeat="option in vm.options"
+            )
+                a(
+                    ui-sref="granel.producto({nombre:option})"
+                ) {{vm.getListNames(option)}}

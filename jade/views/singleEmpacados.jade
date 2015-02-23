@@ -1,0 +1,10 @@
+section.single-empacados.row
+    header.col-xs-12
+        img(src='img/label-empacados.png')
+
+    section.producto.col-xs-12
+        div.foto.col-sm-6
+            img.center-block(ng-src="{{'img/' + vm.producto + '.jpg'}}")
+        div.descripcion.col-sm-6
+            img(ng-src="{{'img/logo' + vm.producto + '.jpg'}}")
+            p(ng-bind-html='vm.descripcion')

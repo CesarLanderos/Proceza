@@ -1,3 +1,12 @@
+section > header.top {
+  height: 140px;
+  background: #E20613;
+  border-bottom: 5px #009245 solid; }
+  section > header.top > img {
+    right: 85px;
+    top: 45px;
+    position: absolute; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-image: url(../img/fondo.jpg);
@@ -32,7 +41,7 @@ body > header {
 
 main {
   margin-top: 65px;
-  min-height: 800px;
+  padding-bottom: 15px;
   background: white; }
 
 .home img.fondo {
@@ -40,29 +49,21 @@ main {
   height: auto;
   margin-top: -15px; }
 
-.lista-empacados header {
-  height: 140px;
-  background: #E20613;
-  border-bottom: 5px #009245 solid; }
-  .lista-empacados header > img {
-    right: 85px;
-    top: 45px;
-    position: absolute; }
-  .lista-empacados header ul {
-    list-style: none;
-    position: absolute;
-    bottom: -40px;
-    padding-left: 0; }
-    .lista-empacados header ul li {
-      float: left;
-      position: relative;
-      width: 120px;
-      height: 60px; }
-      .lista-empacados header ul li.active {
-        border-bottom: 5px red solid; }
-      .lista-empacados header ul li img {
-        bottom: 5px;
-        position: absolute; }
+.lista-empacados header ul {
+  list-style: none;
+  position: absolute;
+  bottom: -40px;
+  padding-left: 0; }
+  .lista-empacados header ul li {
+    float: left;
+    position: relative;
+    width: 120px;
+    height: 60px; }
+    .lista-empacados header ul li.active {
+      border-bottom: 5px red solid; }
+    .lista-empacados header ul li img {
+      bottom: 5px;
+      position: absolute; }
 .lista-empacados .lista {
   margin-top: 100px; }
   .lista-empacados .lista .producto {
@@ -95,3 +96,48 @@ main {
           margin-bottom: 0; } }
     .lista-empacados .lista .producto img {
       width: 100%; }
+
+.single-empacados header {
+  height: 140px;
+  background: #E20613;
+  border-bottom: 5px #009245 solid; }
+  .single-empacados header > img {
+    right: 85px;
+    top: 45px;
+    position: absolute; }
+.single-empacados .producto {
+  margin-top: 100px; }
+
+.granel-list .list {
+  margin-top: 140px;
+  background: url('../img/granel-back.jpg') no-repeat right;
+  height: 595px; }
+.granel-list footer {
+  position: fixed;
+  bottom: 20px;
+  text-align: center; }
+  .granel-list footer ul {
+    background-color: rgba(7, 153, 72, 0.9);
+    padding: 20px 70px 20px 70px;
+    list-style: none;
+    text-align: center; }
+    .granel-list footer ul li {
+      margin-right: 6px;
+      display: inline-block; }
+      .granel-list footer ul li:before {
+        content: ' ';
+        width: 13px;
+        height: 13px;
+        background: #F7931E;
+        border-radius: 50%;
+        border: 1px white solid;
+        float: left;
+        margin-top: 3px;
+        margin-right: 6px; }
+      .granel-list footer ul li a {
+        text-transform: uppercase;
+        float: left;
+        display: inline-block; }
+      .granel-list footer ul li a, .granel-list footer ul li a:hover, .granel-list footer ul li a:active, .granel-list footer ul li a:focus {
+        color: white;
+        text-decoration: none; }
